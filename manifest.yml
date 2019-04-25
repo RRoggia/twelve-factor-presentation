@@ -1,0 +1,6 @@
+---
+applications:
+- name: demo-application
+  path: target/cf-demo-application-0.0.1-SNAPSHOT.jar
+  buildpacks:
+  - java_buildpack
