@@ -10,7 +10,7 @@ Initializes the git repository, enables everyone to have access to the code, and
 
 ## Factor 2 - Dependencies
 
-Convert project to Maven. The application download the dependencies from the [SAP maven repository](http://nexus.van.sap.corp:8081/nexus/). Nexus provides the dependencies we are enabled to use in our SAP's projects, it also hosts our internal solutions (can only deploy to a productive platform, if the build file is in nexus) and it ensures SAP can manage the dependencies' availability ([avoiding surprises](https://kodfabrik.com/journal/i-ve-just-liberated-my-modules/)).
+Convert project to Maven. The application download the dependencies from the [maven repository](https://mvnrepository.com/). It also helps to ([avoid surprises](https://kodfabrik.com/journal/i-ve-just-liberated-my-modules/)).
 
 By converting our application to maven we can already build running `mvn clean install`. This command will generate the `cf-demo-application-0.0.1-SNAPSHOT.jar` at the `target` folder and install it to our maven local repository (check your `.m2` folder).
 
